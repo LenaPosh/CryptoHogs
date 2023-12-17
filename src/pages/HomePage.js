@@ -1,5 +1,6 @@
 import React from 'react';
-import NavMenu from "../components/Nav";
+import NavMenu from "../components/NavMenu";
+import PageContent from "../components/PageContent";
 
 
 const HomePage = () => {
@@ -7,6 +8,7 @@ const HomePage = () => {
     return (
         <>
             <NavMenu/>
+            <PageContent/>
 
         </>
 

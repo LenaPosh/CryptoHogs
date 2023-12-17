@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Logo from '../img/CryptoHogs.png';
-import './Nav.css';
+import './NavMenu.css';
 
 const NavMenu = () => {
     return (
