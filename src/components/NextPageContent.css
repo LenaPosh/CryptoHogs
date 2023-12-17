@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.google.com/specimen/Open+Sans?query=Open+Sans');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.next-page-content {
+    width: 1280px;
+    height: 4301px;
+    background: #FFF;
+    padding-left: 68px;
+    padding-top: 120px;
+    padding-right: 70px;
+}
+
+.info-block {
+    width: 1142px;
+    height: 213px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.market-title {
+    color: #1E1E1E;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-right: 191px;
+}
+
+.upper-text {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.lower-content {
+    display: inline-flex;
+    padding: 0 7px 5px 35px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+}
+
+.text {
+    color: #3E80FF;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-right: 6px;
+}
+
+.svg {
+    width: 25px;
+    height: 14px;
+    fill: #3E80FF;
+    align-self: center;
+}
+
+.sub-block {
+    width: 1140px;
+    height: 88px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #F9F9FA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.sub-block-text {
+    color: #1E1E1E;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+
+
+.new-info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1138px;
+    height: 645px;
+    flex-shrink: 0;
+    margin-top: 120px;
+    /*justify-content: center;*/
+}
+
+.guide-section {
+    display: flex;
+    align-items: flex-start;
+    width: 769px;
+    height: 494px;
+    flex-shrink: 0;
+    margin-left: 0;
+}
+
+.content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание текста и заголовка по центру */
+}
+
+.title {
+    color: #1E1E1E;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-transform: capitalize;
+}
+
+.signup-block {
+    width: 574px;
+    height: 91px;
+    flex-shrink: 0;
+}
+.signup-title {
+    color: #1E1E1E;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 86px;
+}
+
+.signup-content {
+    display: flex;
+    align-items: flex-start; /* Выравнивание элементов вдоль начала контейнера */
+}
+
+.signup-description {
+    color: #635F5F;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.48px;
+    text-transform: capitalize;
+    margin-right: 18px;
+}
+
+.signup-link {
+    color: #635F5F;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.48px;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+}
+
+.signup-block-deposit {
+    width: 337px;
+    height: 91px;
+    flex-shrink: 0;
+}
+
+.signup-title-deposit {
+    color: #3E80FF;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 109px;
+}
+
+.signup-description-deposit {
+    color: #635F5F;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.48px;
+    text-transform: capitalize;
+}
+
+
+
+.signup-block-trade {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 112px;
+}
+
+.signup-title-trade {
+    color: #1E1E1E;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.svg-line-column {
+    width: 102px;
+    height: 482px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-right: 106px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.svg-with-number {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    fill: #F1EEEE;
+    position: relative; /* Для позиционирования текста относительно этого блока */
+}
+
+.svg-with-number-2 {
+    width: 102px;
+    height: 102px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.svg-text {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 44.8px */
+    letter-spacing: 0.64px;
+    text-transform: capitalize;
+
+    position: absolute; /* Абсолютное позиционирование текста */
+    top: 50%; /* Выравнивание по центру */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line-between-svg {
+    width: 2px;
+    height: 75px;
+    background-color: #858080; /* Цвет линии */
+    /* Если нужно выровнять линию по центру между SVG, можно добавить margin сверху и снизу */
+    /*margin-top: 26px; !* Отступ сверху *!*/
+    /*margin-bottom: 8px;*/
+}
+
+.guide-section-wrapper {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
