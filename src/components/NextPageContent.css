@@ -15,7 +15,7 @@ body {
 
 .next-page-content {
     width: 1280px;
-    height: 4301px;
+    height: 3204px;
     background: #FFF;
     padding-left: 68px;
     padding-top: 120px;
@@ -439,6 +439,7 @@ body {
     flex-shrink: 0;
     display: flex;
     margin-left: 54px;
+    margin-top: 39px;
 }
 
 .text-content-last {
@@ -451,7 +452,8 @@ body {
     gap: 58px;
     flex-shrink: 0;
     margin-left: 54px;
-    margin-top: 39px;
+    margin-top: 81px;
+
 }
 
 .info-section-title {

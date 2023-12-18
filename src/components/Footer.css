@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.google.com/specimen/Inter?query=Inter');
+.footer {
+    width: 100%;
+    background-color: #EBF2FF;
+
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1280px;
+    height: 373px;
+    margin: 0 auto;
+
+}
+
+.footer-section-title {
+    color: #3E80FF;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 70px;
+    margin-right: 140px;
+    margin-left: 70px;
+
+
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    width: 139px;
+    height: 232px;
+    flex-shrink: 0;
+    margin-top: 70px;
+    margin-right: 72px;
+}
+
+.footer-section h4 {
+    color: #635F5F;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #635F5F;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+}
+
+.footer-section ul li:not(:last-child) {
+    margin-bottom: 10px; /* Добавляет отступ снизу для каждого li, кроме последнего */
+}
