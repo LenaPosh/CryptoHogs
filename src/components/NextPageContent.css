@@ -278,10 +278,7 @@ body {
 .line-between-svg {
     width: 2px;
     height: 75px;
-    background-color: #858080; /* Цвет линии */
-    /* Если нужно выровнять линию по центру между SVG, можно добавить margin сверху и снизу */
-    /*margin-top: 26px; !* Отступ сверху *!*/
-    /*margin-bottom: 8px;*/
+    background-color: #858080;
 }
 
 .guide-section-wrapper {
