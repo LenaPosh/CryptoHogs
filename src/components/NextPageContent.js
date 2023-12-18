@@ -1,6 +1,7 @@
 import React from 'react';
 import './NextPageContent.css';
 import Luna from '../img/luna.png'
+import Phone from '../img/phone.png'
 
 const NextPageContent = () => {
     return (
@@ -189,7 +190,33 @@ const NextPageContent = () => {
                         </div>
                     </div>
                 </div>
-                {/* Повторите <div className="row"> для остальных прямоугольников */}
+            </div>
+
+            <div className='last-info-block'>
+                <div className="title-centered">
+                    <div className="title-last">
+                        Safe And Reliable Cryptocurrency Exchange
+                    </div>
+                </div>
+                <div className="content-wrapper">
+                    <div className="text-content-last">
+                        <div className="info-section">
+                            <h2 className="info-section-title">Secure asset storage</h2>
+                            <p className="info-section-description">Our industry-leading encryption and storage systems ensure your assets are always secure.</p>
+                        </div>
+                        <div className="info-section" >
+                            <h2 className="info-section-title">Reliable account protection</h2>
+                            <p className="info-section-description" style={{width: '456px', height: '84px'}}>We adhere to the highest security standards and use the most stringent security methods to ensure the safety of your account.</p>
+                        </div>
+                        <div className="info-section">
+                            <h2 className="info-section-title">Reliable platform</h2>
+                            <p className="info-section-description">We have a security framework in place to insure that any Cyberattack is quickly detected and responded to.</p>
+                        </div>
+                    </div>
+                    <div className="image-content">
+                        <img src={Phone} alt="" />
+                    </div>
+                </div>
             </div>
 
 
