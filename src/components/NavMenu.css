@@ -103,7 +103,7 @@ body {
 
 .active {
     color: #3E80FF;
-    border-bottom: 2px solid #3E80FF;
+    border-bottom: none;
 }
 
 
@@ -115,10 +115,9 @@ body {
     border-bottom: none !important;
     background: none !important;
     box-shadow: none !important;
-    color: inherit; /* Чтобы цвет текста оставался таким же, как у других элементов, если это необходимо */
+    color: inherit;
 }
 
-/* Убедитесь, что after псевдоэлемент также не отображается */
 .logo-link::after {
     display: none !important;
 }
