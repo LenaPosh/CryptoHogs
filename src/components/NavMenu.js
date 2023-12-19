@@ -1,8 +1,11 @@
-import { NavLink } from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
 import Logo from '../img/CryptoHogs.png';
 import './NavMenu.css';
 
 const NavMenu = () => {
+
+    const location = useLocation();
+    const isSignInActive = location.pathname === '/signup' || location.pathname === '/forgot-password';
     return (
         <div className="nav-container">
             <div className='nav-container-block'>
@@ -44,7 +47,7 @@ const NavMenu = () => {
                     <button className="button-menu">WhitePaper</button>
                     <NavLink
                         to="/signin"
-                        className={({ isActive }) => isActive ? "nav_item active" : "nav_item"}
+                        className={`nav_item ${isSignInActive ? 'active' : ''}`}
                     >
                         Sign In
                     </NavLink>
