@@ -105,11 +105,10 @@ const SignInForm = () => {
                     {passwordError && <div className="error-message">CryptoHogs account not found.</div>}
                     <div className="form-footer">
                         <button className='button-sign' type="submit">Sign In</button>
-                        <p className='forgot'>Forgot your password?</p>
+                        <NavLink className="create-account-link" to="/forgot-password"><span className="forgot">Forgot your password?</span></NavLink>
                         <div className='forgot-create'>
-                            New to CryptoHogs? <NavLink className="create-account-link" to="/signin"><span className="forgot-create-text">Create a new account</span></NavLink>
+                            New to CryptoHogs? <NavLink className="create-account-link" to="/signup"><span className="forgot-create-text">Create a new account</span></NavLink>
                         </div>
-
                     </div>
                 </form>
             </div>

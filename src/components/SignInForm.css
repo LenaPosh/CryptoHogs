@@ -176,7 +176,7 @@ input.password::placeholder {
 }
 
 .forgot {
-    color: #1E1E1E;
+    color: #3E80FF;
     font-family: 'Noto Sans', sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -238,6 +238,7 @@ input.password::placeholder {
     border-bottom: none !important;
     background: none !important;
     box-shadow: none !important;
+    margin-top: 30px;
 }
 
 .create-account-link::after {
