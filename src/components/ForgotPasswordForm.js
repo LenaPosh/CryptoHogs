@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './ForgotPasswordForm.css';
+import CodeInput from "./CodeInput";
 
 const ForgotPasswordForm = () => {
     const [email, setEmail] = useState('');
     const [error, setError] = useState(false); // Добавлено состояние для ошибки
     const [errorMessage, setErrorMessage] = useState(''); // Сообщение об ошибке
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
         setError(false); // Сброс ошибки при изменении поля ввода
+        setIsSubmitted(false);
     };
 
     const handleSubmit = async (event) => {
@@ -29,7 +32,32 @@ const ForgotPasswordForm = () => {
                 setErrorMessage(mockResponse.data.message); // Установка сообщения об ошибке
             }
         }, 1000);
+
+        setIsSubmitted(true);
     };
+
+    if (isSubmitted) {
+        return (
+            <div className="page-container">
+                <div className="main-title">CryptoHogs</div>
+                <div className="form-container-forgot">
+                    <h2>Reset Password</h2>
+                    <h5>We've sent a code to your email</h5>
+                    <CodeInput />
+                    <div className="form-footer-forgot">
+                        <button className='button-sign-forgot' type="submit">Reset Password</button>
+                        <div className='forgot-create-page'>
+                            Didn't get a code? <NavLink className="create-account-link" to="/signup"><span className="forgot-create-text">Click to resend.</span></NavLink>
+                        </div>
+                    </div>
+                </div>
+                <div className="help-text">
+                    Need more help ?<NavLink className="link-help-text" to="/contact">Contact us</NavLink>
+                </div>
+            </div>
+        );
+    }
+
 
 
     return (
