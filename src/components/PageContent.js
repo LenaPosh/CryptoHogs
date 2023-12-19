@@ -1,5 +1,6 @@
 import React from 'react';
 import './PageContent.css';
+import {NavLink} from "react-router-dom";
 
 const PageContent = () => {
     return (
@@ -14,7 +15,8 @@ const PageContent = () => {
 
             <div className="input-button-container">
                 <input type="text" className="input-field" placeholder="Email address" />
-                <button className="submit-button">Register Now</button>
+                <NavLink className="create-account-link-up" to="/signup"><button className="submit-button">Register Now</button></NavLink>
+
             </div>
         </div>
     );

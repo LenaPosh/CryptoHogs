@@ -35,24 +35,6 @@ const SignInForm = () => {
         setPassword(e.target.value);
     };
 
-    // const handleSubmit = async (event) => {
-    //     event.preventDefault();
-    //     setPasswordError(false); // сброс сообщения об ошибке при попытке входа
-    //     try {
-    //         const response = await axios.post('URL_API_СЕРВЕРА', {
-    //             email,
-    //             password
-    //         });
-    //
-    //         if (response.status === 200) {
-    //             // обработка успешного входа
-    //         } else {
-    //             setPasswordError(true); // установка сообщения об ошибке если пароль неверен
-    //         }
-    //     } catch (error) {
-    //         setPasswordError(true); // установка сообщения об ошибке если произошла ошибка запроса
-    //     }
-    // };
     const handleSubmit = async (event) => {
         event.preventDefault();
         setPasswordError(false); // сброс сообщения об ошибке при попытке входа
@@ -122,3 +104,22 @@ const SignInForm = () => {
 export default SignInForm;
 
 
+
+// const handleSubmit = async (event) => {
+//     event.preventDefault();
+//     setPasswordError(false); // сброс сообщения об ошибке при попытке входа
+//     try {
+//         const response = await axios.post('URL_API_СЕРВЕРА', {
+//             email,
+//             password
+//         });
+//
+//         if (response.status === 200) {
+//             // обработка успешного входа
+//         } else {
+//             setPasswordError(true); // установка сообщения об ошибке если пароль неверен
+//         }
+//     } catch (error) {
+//         setPasswordError(true); // установка сообщения об ошибке если произошла ошибка запроса
+//     }
+// };
