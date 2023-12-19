@@ -7,7 +7,7 @@ const NavMenu = () => {
         <div className="nav-container">
             <div className='nav-container-block'>
                 <div className="logo-container">
-                    <NavLink to="/">
+                    <NavLink to="/" className="logo-link">
                         <img className="logo" alt="Logo" src={Logo} />
                     </NavLink>
                 </div>

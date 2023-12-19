@@ -104,6 +104,7 @@ form {
     padding-left: 42px;
     padding-bottom: 25px;
     border-bottom: 1px solid #1E1E1E;
+    outline: none;
 }
 
 .email::placeholder,
@@ -227,4 +228,62 @@ input.password::placeholder {
     line-height: normal;
     text-decoration: none;
     margin-left: 5px;
+}
+
+.create-account-link,
+.create-account-link:hover,
+.create-account-link.active,
+.create-account-link::after {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.create-account-link::after {
+    display: none !important;
+}
+.error-message {
+    color: #E33C54;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 16px;
+    text-align: left;
+    margin-left: 101px;
+    width: 354px;
+    height: 33px;
+}
+
+.password-error {
+    border-bottom: 1px solid #E33C54;
+    color: #E33C54;
+}
+.password-error::placeholder {
+    color: #E33C54; /* Красный цвет для плейсхолдера при ошибке */
+}
+
+/* Для поддержки разных браузеров, вам может понадобиться использовать вендорные префиксы: */
+.password-error::-moz-placeholder { /* Firefox 19+ */
+    color: #E33C54;
+    opacity: 1; /* Для Firefox необходимо также установить непрозрачность */
+}
+
+.password-error:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #E33C54;
+}
+
+.password-error::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #E33C54;
+}
+
+.password-error::placeholder { /* Стандартный способ для большинства браузеров */
+    color: #E33C54;
+}
+
+
+.password-error::after {
+    background: #E33C54;
 }
