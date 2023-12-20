@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 .page-container-up {
     display: flex;
     align-items: center;
     flex-shrink: 0;
     flex-direction: column;
     width: 1280px;
+    height: 1734px;
     background: linear-gradient(255deg, #75A4FF -30.39%, rgba(173, 190, 223, 0.00) 86.58%), #FFF;
 }
 
@@ -48,7 +51,7 @@ form {
     line-height: 140%;
     letter-spacing: 0.48px;
     text-transform: capitalize;
-    margin-top: 81px;
+    margin-top: 51px;
     margin-right: 99px;
     margin-left: 98px;
     border: none !important;
@@ -58,6 +61,7 @@ form {
     padding-bottom: 25px;
     border-bottom: 1px solid #1E1E1E;
     outline: none;
+    padding-right: 40px;
 }
 
 
@@ -71,4 +75,128 @@ form {
     letter-spacing: 0.48px;
     text-transform: capitalize;
     box-sizing: border-box;
+}
+
+.confirm-password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 99px;
+}
+
+.confirm-password-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.information-text-with-icon {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 105px;
+
+    color: #635F5F;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.48px;
+    text-transform: capitalize;
+}
+
+.information-text-with-icon span {
+    align-self: flex-start;
+    margin-top: 5px
+}
+
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Отступ сверху */
+    margin-bottom: 18px; /* Отступ снизу */
+    justify-content: flex-start;
+    gap: 14px; /* Расстояние между чекбоксом и меткой */
+    padding-left: 0; /* Установите отступ слева если нужно */
+    margin-left: 105px;
+}
+
+.custom-checkbox {
+    display: none; /* Скрыть стандартный чекбокс */
+
+}
+
+.checkbox-label {
+    color: #635F5F;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.48px;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    position: relative; /* Относительное позиционирование для псевдоэлементов */
+    padding-left: 54px; /* Достаточно места для кастомного чекбокса */
+
+}
+
+.checkbox-label::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #635F5F;
+    display: inline-block;
+    margin-right: 14px;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+}
+.custom-checkbox:checked + .checkbox-label::after {
+    content: '✔';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 24px;
+    color: #635F5F;
+}
+
+
+.button-sign-up {
+    display: flex;
+    width: 540px;
+    height: 80px;
+    padding: 28px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 0.5px solid #7D7D7D;
+    background: rgba(62, 128, 255, 0.90);
+    box-shadow: 0 1px 4.8px 0 rgba(0, 0, 0, 0.25);
+    margin-top: 100px;
+    color: #FFF;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 105px;
 }
