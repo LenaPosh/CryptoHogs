@@ -13,7 +13,7 @@ body {
 }
 
 .page-content {
-    width: 1280px;
+    width: 100vw;
     height: 624px;
     flex-shrink: 0;
     background: linear-gradient(255deg, #75A4FF -30.39%, rgba(173, 190, 223, 0.00) 86.58%), #FFF;
@@ -21,6 +21,7 @@ body {
     border-bottom: 1px solid #000;
     padding-left: 71px;
     padding-top: 120px;
+    margin: 0 auto;
 
 }
 

@@ -17,7 +17,7 @@ const NextPageContent = () => {
                         </div>
                     </div>
                 </div>
-                <div className="sub-block">
+                <div className="sub-block" style={{marginTop: '60px'}}>
                     <div className="sub-block-text">Name</div>
                     <div className="sub-block-text">Price</div>
                     <div className="sub-block-text">Market Cap</div>
@@ -29,7 +29,7 @@ const NextPageContent = () => {
             </div>
 
             <div className="new-info-block">
-                <div className="title-centered">
+                <div className="title-centered-new">
                     <div className="title">Beginner's Guide</div>
                 </div>
                 <div className="guide-section-wrapper">
