@@ -24,23 +24,65 @@ const SignUpForm = () => {
         confirmPassword: '',
     });
 
+    const [validation, setValidation] = useState({
+        emailValid: true,
+        passwordValid: true,
+    });
+
+    const [passwordsMatch, setPasswordsMatch] = useState(true);
+    const [passwordError, setPasswordError] = useState(false);
+    const validateEmail = (email) => {
+        return email.includes('@');
+    };
+
+    const validatePassword = (password) => {
+        const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]+$/;
+        return regex.test(password);
+    };
+
+
+
     const toggleConfirmPasswordVisibility = () => {
         setConfirmPasswordShown(!confirmPasswordShown);
     };
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setFormData((prevData) => ({
-            ...prevData,
-            [name]: value,
-        }));
+        const updatedFormData = { ...formData, [name]: value };
+        setFormData(updatedFormData);
+
+        if (name === 'password' || name === 'confirmPassword') {
+            const passwordValid = validatePassword(updatedFormData.password);
+            const passwordsMatch = updatedFormData.password === updatedFormData.confirmPassword;
+            setValidation((prev) => ({ ...prev, passwordValid: passwordValid }));
+            setPasswordsMatch(passwordsMatch);
+        }
     };
+
+
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        // Here you would handle the form submission, e.g., by sending data to your API
+
+        const isEmailValid = validateEmail(formData.email);
+        const isPasswordValid = validatePassword(formData.password);
+        const doPasswordsMatch = formData.password === formData.confirmPassword;
+
+        setValidation({
+            emailValid: isEmailValid,
+            passwordValid: isPasswordValid,
+        });
+        setPasswordsMatch(doPasswordsMatch);
+
+        if (!isEmailValid || !isPasswordValid || !doPasswordsMatch) {
+            setPasswordError(true); // Установка флага ошибки
+            return;
+        }
+
+        // Логика отправки данных
         console.log(formData);
     };
+
 
     return (
         <div className="page-container-up">
@@ -48,7 +90,7 @@ const SignUpForm = () => {
             <div className="form-container-up">
                 <h2>Create Account</h2>
                 <form onSubmit={handleSubmit}>
-                    <input style={{marginTop: '81px'}}
+                    <input style={{marginTop: '41px'}}
                         type="text"
                         name="firstName"
                         className="input-field-up"
@@ -67,15 +109,16 @@ const SignUpForm = () => {
                     <input
                         type="email"
                         name="email"
-                        className="input-field-up"
+                        className={`input-field-up ${!validation.passwordValid || !passwordsMatch ? 'invalid-input' : ''}`}
+
                         placeholder="Email"
                         value={formData.email}
                         onChange={handleInputChange}
                     />
                     <input
-                        type="password"
+                        type={confirmPasswordShown ? "text" : "password"}
                         name="password"
-                        className="input-field-up"
+                        className={`input-field-up ${!validation.passwordValid || !passwordsMatch ? 'invalid-input' : ''}`}
                         placeholder="Password"
                         value={formData.password}
                         onChange={handleInputChange}
@@ -84,16 +127,22 @@ const SignUpForm = () => {
                         <input
                             type={confirmPasswordShown ? "text" : "password"}
                             name="confirmPassword"
-                            className="input-field-up"
+                            className={`input-field-up ${!passwordsMatch ? 'invalid-input' : ''}`}
                             placeholder="Confirm Password"
                             value={formData.confirmPassword}
                             onChange={handleInputChange}
                         />
+
                         <div onClick={toggleConfirmPasswordVisibility} className="password-icon-container">
                             {confirmPasswordShown ? <EyeSlashIcon /> : <EyeIcon />}
                         </div>
                     </div>
-                    <div className="information-text-with-icon">
+                    {passwordError && !passwordsMatch && (
+                        <div className="error-message-password">
+                            Passwords do not match
+                        </div>
+                    )}
+                    <div className="information-text-with-icon" style={{ color: validation.emailValid ? "#635F5F" : "red" }}>
                         <i className="information-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
                                 <path d="M22 22L22 30.25M22 15.885V15.8125M5.5 22C5.5 12.8873 12.8873 5.5 22 5.5C31.1127 5.5 38.5 12.8873 38.5 22C38.5 31.1127 31.1127 38.5 22 38.5C12.8873 38.5 5.5 31.1127 5.5 22Z" stroke="#635F5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -101,8 +150,9 @@ const SignUpForm = () => {
                         </i>
                         <span>Email is not editable.</span>
                     </div>
-                    <div className="checkbox-container">
-                        <input type="checkbox" id="terms" name="terms" className="custom-checkbox" />
+                    <div className="checkbox-container" style={{ color: passwordsMatch ? "#635F5F" : "red" }}>
+                        <input type="checkbox" id="terms" name="terms" className={`custom-checkbox ${!passwordsMatch && 'invalid-checkbox'}`} disabled={!passwordsMatch} />
+
                         <label htmlFor="terms" className="checkbox-label">I agree to Crypto’s Terms of Service and
                             Privacy Policy.*</label>
                     </div>

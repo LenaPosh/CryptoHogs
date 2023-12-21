@@ -5,17 +5,17 @@
     align-items: center;
     flex-shrink: 0;
     flex-direction: column;
-    width: 1280px;
-    height: 1734px;
+    width: 100vw;
+    height: auto;
     background: linear-gradient(255deg, #75A4FF -30.39%, rgba(173, 190, 223, 0.00) 86.58%), #FFF;
 }
 
 .form-container-up {
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
-    width: 750px;
-    height: 1208px;
+    margin-top: 50px;
+    width: 550px;
+    height: auto;
     flex-shrink: 0;
     border-radius: 20px;
     background: #FFF;
@@ -25,12 +25,12 @@
 .form-container-up h2 {
     color: #1E1E1E;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 48px;
+    font-size: calc(1vw + 1rem);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
-    margin-top: 100px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -40,7 +40,7 @@ form {
 }
 
 .input-field-up {
-    width: 554px;
+    width: 353px;
     height: 59px;
     flex-shrink: 0;
     color: #635F5F;
@@ -51,14 +51,13 @@ form {
     line-height: 140%;
     letter-spacing: 0.48px;
     text-transform: capitalize;
-    margin-top: 51px;
+    margin-top: 31px;
     margin-right: 99px;
     margin-left: 98px;
     border: none !important;
     border-bottom: 1px solid #1E1E1E !important;
     box-sizing: border-box;
     padding-left: 42px;
-    padding-bottom: 25px;
     border-bottom: 1px solid #1E1E1E;
     outline: none;
     padding-right: 40px;
@@ -68,7 +67,7 @@ form {
 .input-field-up::placeholder {
     color: #635F5F;
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -86,7 +85,7 @@ form {
 
 .confirm-password-icon {
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     right: 15px;
     cursor: pointer;
 }
@@ -94,14 +93,13 @@ form {
 .information-text-with-icon {
     display: flex;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
     justify-content: flex-start;
     gap: 10px;
     margin-left: 105px;
-
     color: #635F5F;
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 33.6px */
@@ -118,11 +116,10 @@ form {
 .checkbox-container {
     display: flex;
     align-items: center;
-    margin-top: 10px; /* Отступ сверху */
-    margin-bottom: 18px; /* Отступ снизу */
+    margin-top: 10px;
     justify-content: flex-start;
-    gap: 14px; /* Расстояние между чекбоксом и меткой */
-    padding-left: 0; /* Установите отступ слева если нужно */
+    gap: 14px;
+    padding-left: 0;
     margin-left: 105px;
 }
 
@@ -134,7 +131,7 @@ form {
 .checkbox-label {
     color: #635F5F;
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 33.6px */
@@ -144,7 +141,7 @@ form {
     display: flex;
     align-items: center;
 
-    position: relative; /* Относительное позиционирование для псевдоэлементов */
+    position: relative;
     padding-left: 54px; /* Достаточно места для кастомного чекбокса */
 
 }
@@ -159,8 +156,6 @@ form {
     margin-right: 14px;
     vertical-align: middle;
     box-sizing: border-box;
-
-
     position: absolute;
     left: 0;
     top: 50%;
@@ -180,8 +175,8 @@ form {
 
 .button-sign-up {
     display: flex;
-    width: 540px;
-    height: 80px;
+    width: 380px;
+    height: 70px;
     padding: 28px 40px;
     justify-content: center;
     align-items: center;
@@ -191,12 +186,33 @@ form {
     border: 0.5px solid #7D7D7D;
     background: rgba(62, 128, 255, 0.90);
     box-shadow: 0 1px 4.8px 0 rgba(0, 0, 0, 0.25);
-    margin-top: 100px;
+    margin-top: 60px;
     color: #FFF;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     margin-left: 105px;
+    margin-bottom: 20px
+}
+
+.invalid-input {
+    border-bottom: 1px solid #E33C54;
+}
+
+.invalid-checkbox::before {
+    border: 1px solid #E33C54;
+}
+
+.error-message-password {
+    color: #E33C54;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 16px;
+    text-align: left;
+    margin-left: 101px;
 }
