@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 .page-container {
-    width: 1280px;
-    height: 1524px;
+    width: 100vw; /* Изменено с 1280px на 100% ширины вьюпорта */
+    height: auto;
     display: flex;
     align-items: center;
     background: linear-gradient(255deg, #75A4FF -30.39%, rgba(173, 190, 223, 0.00) 86.58%), #FFF;
@@ -14,35 +14,35 @@
 .main-title {
     color: #3E80FF;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 64px;
+    font-size: calc(1vw + 1rem);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .form-container h2 {
     color: #1E1E1E;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 48px;
+    font-size: calc(1vw + 1rem);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
-    margin-top: 100px;
+    margin-top: 40px;
     text-align: center;
 }
 
 
 .form-container {
-    width: 750px;
-    height: 1003px;
+    width: 550px;
+    height: auto;
     border-radius: 20px;
     background: #FFF;
     box-shadow: 2px 3.5px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 50px;
 }
 
 
@@ -64,7 +64,7 @@ form {
     line-height: 140%;
     letter-spacing: 0.48px;
     text-transform: capitalize;
-    margin-top: 81px;
+    margin-top: 51px;
     margin-right: 99px;
     margin-left: 98px;
     border: none !important;
@@ -77,7 +77,7 @@ form {
     width: 554px;
     height: 66.844px;
     flex-shrink: 0;
-    margin-top: 96.96px;
+    margin-top: 50px;
     margin-right: 98px;
     margin-left: 98px;
 }
@@ -99,10 +99,9 @@ form {
     letter-spacing: 0.48px;
     text-transform: capitalize;
     height: 59px;
-    width: 553px;
+    width: 353px;
     box-sizing: border-box;
     padding-left: 42px;
-    padding-bottom: 25px;
     border-bottom: 1px solid #1E1E1E;
     outline: none;
 }
@@ -111,7 +110,7 @@ form {
 .password::placeholder {
     color: #635F5F;
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -136,15 +135,15 @@ input.password::placeholder {
     top: 0;
     right: 18px;
     bottom: 25.4px;
-    left: 476px;
+    left: 276px;
     width: auto;
     height: auto;
 }
 
 .button-sign {
     display: flex;
-    width: 540px;
-    height: 80px;
+    width: 380px;
+    height: 70px;
     padding: 28px 40px;
     justify-content: center;
     align-items: center;
@@ -158,50 +157,51 @@ input.password::placeholder {
 
     color: #FFF;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin-left: 85px
 
 }
 
 .form-footer {
     display: flex;
     flex-direction: column;
-    margin-top: 228px;
+    margin-top: 68px;
     width: 540px;
     height: 206px;
     flex-shrink: 0;
-    margin-left: 105px;
+    /*margin-left: 105px;*/
 }
 
 .forgot {
     color: #3E80FF;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
     margin-top: 30px;
-    margin-left: 143px;
+    margin-left: 163px;
 }
 
 .forgot-create {
     color: #1E1E1E;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     text-decoration: none;
-    margin-top: 30px;
-    margin-left: 23px;
+    margin-top: 15px;
+    margin-left: 77px;
 }
 
 .forgot-create-text {
     color: #3E80FF;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -212,17 +212,17 @@ input.password::placeholder {
     display: flex;
     color: #1E1E1E;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .link-help-text {
     color: #3E80FF;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -238,7 +238,7 @@ input.password::placeholder {
     border-bottom: none !important;
     background: none !important;
     box-shadow: none !important;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .create-account-link::after {
