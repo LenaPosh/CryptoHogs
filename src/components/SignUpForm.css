@@ -197,9 +197,13 @@ form {
     margin-bottom: 20px
 }
 
-.invalid-input {
-    border-bottom: 1px solid #E33C54;
-}
+/*.invalid-input {*/
+/*    border-bottom: 1px solid #E33C54;*/
+/*}*/
+
+/*.invalid-input::placeholder {*/
+/*    color: #E33C54;*/
+/*}*/
 
 .invalid-checkbox::before {
     border: 1px solid #E33C54;
@@ -212,7 +216,20 @@ form {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 16px;
+    margin-top: 13px;
     text-align: left;
     margin-left: 101px;
 }
+
+/*!* Стиль для нормального состояния плейсхолдера *!*/
+/*.input-field-up::placeholder {*/
+/*    color: #635F5F;*/
+/*    !* другие стили плейсхолдера *!*/
+/*}*/
+
+/*!* Стиль для плейсхолдера при ошибке *!*/
+/*.invalid-input::placeholder {*/
+/*    color: #E33C54; !* Красный цвет *!*/
+/*}*/
+
+/*!* Другие стили... *!*/
