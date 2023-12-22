@@ -221,15 +221,69 @@ form {
     margin-left: 101px;
 }
 
-/*!* Стиль для нормального состояния плейсхолдера *!*/
-/*.input-field-up::placeholder {*/
-/*    color: #635F5F;*/
-/*    !* другие стили плейсхолдера *!*/
-/*}*/
 
-/*!* Стиль для плейсхолдера при ошибке *!*/
-/*.invalid-input::placeholder {*/
-/*    color: #E33C54; !* Красный цвет *!*/
-/*}*/
+@media only screen and (max-width: 768px) {
+    .page-container-up {
+        /* Ваши стили для мобильных устройств */
+    }
 
-/*!* Другие стили... *!*/
+    .form-container-up {
+        max-width: 353px;
+        width: 90%; /* Сделать форму шириной 90% от родителя */
+        margin-top: 15px;
+        padding: 20px; /* Добавить паддинг внутри формы */
+        /* Остальные стили */
+    }
+
+    .form-container-up h2 {
+        font-size: calc(0.5vw + 0.8rem); /* Уменьшить базовый размер шрифта */
+        /* Остальные стили */
+    }
+
+    /* Подстройте размеры вводимых данных */
+    .input-field-up {
+        max-width: 230px;
+        width: 100%; /* Использовать всю доступную ширину */
+        height: auto; /* Высота по содержимому */
+        margin: 15px 0 0 40px ; /* Уменьшить отступы */
+
+    }
+
+    /* Уменьшите размер иконки и позиционирование */
+    .confirm-password-icon {
+        width: 24px; /* Уменьшите размер иконки */
+        height: 16px;
+        bottom: 10px;
+        left: 230px
+        /* Остальные стили */
+    }
+
+    /* Адаптируйте текстовые элементы */
+    .information-text-with-icon,
+    .checkbox-label,
+    .error-message-password {
+        font-size: 14px; /* Уменьшите размер шрифта */
+        margin-left: 50px;/* Остальные стили */
+    }
+
+    /* Адаптируйте кнопки */
+    .button-sign-up {
+        width: auto; /* Ширина по содержимому */
+        padding: 15px; /* Уменьшите паддинг */
+        font-size: 18px; /* Уменьшите размер шрифта */
+        align-items: center;
+        margin-left: 1px;
+
+    }
+
+    .checkbox-container {
+        margin-left: 1px;
+    }
+
+    /* Адаптируйте чекбокс */
+    .custom-checkbox:checked + .checkbox-label::after {
+        /* Остальные стили */
+        font-size: 16px;
+
+    }
+}

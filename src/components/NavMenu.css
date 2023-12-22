@@ -84,9 +84,9 @@ body {
 
 .nav-buttons {
     display: flex;
-    width: 216px;
     align-items: center;
     gap: 25px;
+    margin-left: auto;
     /*margin: 0 auto;*/
     /*flex-wrap: wrap;*/
     /*justify-content: space-between;*/
@@ -136,3 +136,141 @@ body {
     display: none !important;
 }
 
+.hamburger-menu {
+    display: none;
+
+}
+
+.nav-mobile {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    height: 49px;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px; /* Размер иконки меню */
+        cursor: pointer;
+        padding: 10px;
+        order: 2;
+        margin-right: 50px;
+    }
+
+    .nav-mobile {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        order: 3;
+        transition: right 0.3s ease;
+    }
+
+    .nav-mobile.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute; /* Или position: fixed; если нужно, чтобы меню оставалось при прокрутке */
+        top: 80px; /* Выравнивание относительно верха */
+        right: 20px; /* Прижимаем меню к правому краю */
+        width: 250px; /* Ширина вашего меню */
+        height: 400px; /* Высота меню */
+        background: white; /* Фон меню */
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2); /* Тень с левой стороны меню */
+        z-index: 100; /* Убедитесь, что меню находится над другими элементами */
+        /*overflow-y: auto;*/
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    .nav-container {
+        /* Изменения для контейнера навигации */
+    }
+
+    .nav-container-block {
+        display: flex;
+        justify-content: space-between; /* Распределите элементы по обеим сторонам */
+        align-items: center;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .logo-container {
+        order: 1;
+        margin-left: 30px;
+    }
+
+    .nav-links,
+    .nav-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        order: 2;
+        gap: 0;
+        margin: 0; /* Убираем внешние отступы */
+        padding: 0;
+        height: auto;
+    }
+
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav_item,
+    .button-menu {
+        width: 100%; /* Полная ширина для элементов меню */
+        text-align: right; /* Текст по центру */
+        margin: 5px 0; /* Отступы между элементами */
+        right: 20px;
+    }
+    /*.nav_item:hover,*/
+    /*.button-menu:hover {*/
+    /*    background-color: #ddd; !* Изменение фона при наведении *!*/
+    /*}*/
+
+    .nav_item:hover,
+    .button-menu:hover {
+        border: none; /* Убрать границу */
+        box-shadow: none; /* Убрать тень */
+    }
+
+    .nav_item::after,
+    .nav_item::before {
+        content: none !important;
+    }
+
+    .nav_item:focus,
+    .button-menu:focus {
+        outline: none; /* Убирает внешнюю обводку при фокусе */
+        /* Другие стили при фокусе */
+    }
+
+    .button-menu {
+        margin: 5px 0;
+        padding: 8px 15px; /* Меньшие отступы */
+        font-size: 14px; /* Меньший размер шрифта */
+        max-width: 100%;
+
+        background-color: #f0f0f0;
+        color: #333; /* Темный текст */
+        border: 1px solid #ddd; /* Тонкая граница */
+    }
+
+    .nav-mobile .nav_item:hover::after,
+    .nav-mobile .nav_item.active::after {
+        width: 0; /* Убираем полоску при наведении и активном состоянии */
+    }
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+}
