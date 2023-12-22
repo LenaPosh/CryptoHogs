@@ -13,8 +13,8 @@
 .form-container-up {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    width: 550px;
+    margin-top: 30px;
+    width: 450px;
     height: auto;
     flex-shrink: 0;
     border-radius: 20px;
@@ -25,12 +25,12 @@
 .form-container-up h2 {
     color: #1E1E1E;
     font-family: 'Noto Sans', sans-serif;
-    font-size: calc(1vw + 1rem);
+    font-size: calc(0.5vw + 1rem);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -40,34 +40,34 @@ form {
 }
 
 .input-field-up {
-    width: 353px;
-    height: 59px;
+    width: 253px;
+    height: 49px;
     flex-shrink: 0;
     color: #635F5F;
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
     letter-spacing: 0.48px;
     text-transform: capitalize;
-    margin-top: 31px;
+    margin-top: 10px;
     margin-right: 99px;
     margin-left: 98px;
     border: none !important;
     border-bottom: 1px solid #1E1E1E !important;
     box-sizing: border-box;
-    padding-left: 42px;
+    padding-left: 22px;
     border-bottom: 1px solid #1E1E1E;
     outline: none;
-    padding-right: 40px;
+    padding-right: 20px;
 }
 
 
 .input-field-up::placeholder {
     color: #635F5F;
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -93,13 +93,13 @@ form {
 .information-text-with-icon {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 15px;
     justify-content: flex-start;
     gap: 10px;
     margin-left: 105px;
     color: #635F5F;
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 33.6px */
@@ -131,7 +131,7 @@ form {
 .checkbox-label {
     color: #635F5F;
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 33.6px */
@@ -142,14 +142,14 @@ form {
     align-items: center;
 
     position: relative;
-    padding-left: 54px; /* Достаточно места для кастомного чекбокса */
+    padding-left: 42px; /* Достаточно места для кастомного чекбокса */
 
 }
 
 .checkbox-label::before {
     content: "";
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 5px;
     border: 1px solid #635F5F;
     display: inline-block;
@@ -165,18 +165,18 @@ form {
 .custom-checkbox:checked + .checkbox-label::after {
     content: '✔';
     position: absolute;
-    left: 10px;
+    left: 8px;
     top: 50%;
     transform: translate(0, -50%);
-    font-size: 24px;
+    font-size: 20px;
     color: #635F5F;
 }
 
 
 .button-sign-up {
     display: flex;
-    width: 380px;
-    height: 70px;
+    width: 280px;
+    height: 55px;
     padding: 28px 40px;
     justify-content: center;
     align-items: center;
@@ -186,24 +186,24 @@ form {
     border: 0.5px solid #7D7D7D;
     background: rgba(62, 128, 255, 0.90);
     box-shadow: 0 1px 4.8px 0 rgba(0, 0, 0, 0.25);
-    margin-top: 60px;
+    margin-top: 30px;
     color: #FFF;
     font-family: 'Noto Sans', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-left: 105px;
+    margin-left: 100px;
     margin-bottom: 20px
 }
 
-/*.invalid-input {*/
-/*    border-bottom: 1px solid #E33C54;*/
-/*}*/
+.invalid-input {
+    border-bottom: 1px solid #E33C54;
+}
 
-/*.invalid-input::placeholder {*/
-/*    color: #E33C54;*/
-/*}*/
+.invalid-input::placeholder {
+    color: #E33C54;
+}
 
 .invalid-checkbox::before {
     border: 1px solid #E33C54;
@@ -212,11 +212,11 @@ form {
 .error-message-password {
     color: #E33C54;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 13px;
+    margin-top: 5px;
     text-align: left;
     margin-left: 101px;
 }
