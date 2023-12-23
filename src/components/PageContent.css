@@ -137,3 +137,49 @@ body {
 .create-account-link-up::after {
     display: none !important;
 }
+
+@media screen and (max-width: 768px) {
+    .page-content {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 60px;
+        height: auto;
+    }
+    .crypto-text,
+    .header-text {
+        font-size: 26px;
+    }
+
+
+    .header-content {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .description-text {
+        font-size: 20px;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .input-button-container {
+        /*flex-direction: column;*/
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        gap: 10px;
+    }
+
+    .input-field {
+        width: 80%;
+        margin-bottom: 15px;
+        height: 60px;
+        font-size: 16px;
+    }
+
+    .submit-button {
+        width: 150%;
+        height: 60px;
+        font-size: 16px;
+    }
+}

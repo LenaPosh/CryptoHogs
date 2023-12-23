@@ -12,17 +12,6 @@ body {
     padding: 0;
 }
 
-
-/*.next-page-content {*/
-/*    width: 100vw;*/
-/*    height: 3204px;*/
-/*    background: #FFF;*/
-/*    padding-left: 68px;*/
-/*    padding-top: 120px;*/
-/*    padding-right: 70px;*/
-/*    !*margin: 0 auto;*!*/
-/*}*/
-
 .next-page-content {
     width: 100vw;
     padding-left: 68px;
@@ -30,18 +19,9 @@ body {
     padding-right: 70px;
 }
 
-/*.info-block {*/
-/*    width: 100vh;*/
-/*    height: 213px;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: flex-start;*/
-/*    justify-content: space-between;*/
-/*    margin-bottom: 60px;*/
-/*}*/
 .info-block {
-    max-width: 1600px; /* Максимальная ширина, при которой блок будет центрироваться */
-    margin: 0 auto; /* Центрирование блока */
+    max-width: 1600px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -49,46 +29,21 @@ body {
     margin-bottom: 60px;
 }
 
-/*.market-title {*/
-/*    color: #1E1E1E;*/
-/*    font-family: 'Noto Sans', sans-serif;*/
-/*    font-size: 48px;*/
-/*    font-style: normal;*/
-/*    font-weight: 500;*/
-/*    line-height: normal;*/
-/*    text-transform: capitalize;*/
-/*    margin-right: 191px;*/
-/*}*/
 
 .market-title {
     color: #1E1E1E;
     font-family: 'Noto Sans', sans-serif;
     font-size: 48px;
-    margin-right: auto; /* Автоматический отступ справа */
+    margin-right: auto;
 }
 
-/*.upper-text {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    white-space: nowrap;*/
-/*    width: 100vh;*/
-/*    margin: 0 auto;*/
-/*}*/
 .upper-text {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Распределение пространства между элементами */
-    width: 100%; /* Полная доступная ширина */
+    justify-content: space-between;
+    width: 100%;
 }
 
-/*.lower-content {*/
-/*    display: inline-flex;*/
-/*    padding: 0 7px 5px 35px;*/
-/*    justify-content: flex-end;*/
-/*    align-items: center;*/
-/*    gap: 20px;*/
-/*    white-space: nowrap;*/
-/*}*/
 
 .lower-content {
     display: flex;
@@ -97,29 +52,12 @@ body {
 }
 
 
-/*.text {*/
-/*    color: #3E80FF;*/
-/*    font-family: 'Noto Sans', sans-serif;*/
-/*    font-size: 24px;*/
-/*    font-style: normal;*/
-/*    font-weight: 500;*/
-/*    line-height: normal;*/
-/*    text-transform: capitalize;*/
-/*    margin-right: 6px;*/
-/*}*/
-
 .text {
     color: #3E80FF;
     font-family: 'Noto Sans', sans-serif;
     font-size: 24px;
 }
 
-/*.svg {*/
-/*    width: 25px;*/
-/*    height: 14px;*/
-/*    fill: #3E80FF;*/
-/*    align-self: center;*/
-/*}*/
 
 .svg {
     width: 26px;
@@ -127,24 +65,13 @@ body {
     fill: #3E80FF;
 }
 
-/*.sub-block {*/
-/*    height: 88px;*/
-/*    flex-shrink: 0;*/
-/*    border-radius: 5px;*/
-/*    background: #F9F9FA;*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    padding: 0 10px;*/
-/*    max-width: 1600px; !* Максимальная ширина, при которой блок будет центрироваться *!*/
-/*    margin: 0 auto;*/
-/*}*/
+
 .sub-block {
-    width: 100%; /* Задайте ширину в процентах или vw для адаптивности */
-    max-width: 1600px; /* Максимальная ширина блока */
-    box-sizing: border-box; /* Убедитесь, что padding и border включены в ширину */
-    margin: 0 auto; /* Автоматические отступы для центрирования */
-    padding: 0 10px; /* Паддинги по бокам */
+    width: 100%;
+    max-width: 1600px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between; /* Равномерно распределяет дочерние элементы */
     align-items: center;
@@ -194,20 +121,14 @@ body {
     margin: auto;
 }
 
-
-/*.content-center {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center; !* Выравнивание текста и заголовка по центру *!*/
-/*}*/
 .content-center {
-    width: 100%; /* Адаптивная ширина */
+    width: 100%;
 }
 .title-centered-new {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65px; /* Пример высоты */
+    height: 65px;
 }
 
 .title {
@@ -620,29 +541,6 @@ body {
     }
 }
 
-@media (max-width: 480px) {
-    .info-block {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .market-title {
-        font-size: 24px; /* Дальнейшее уменьшение размера шрифта */
-    }
-
-    .text {
-        font-size: 16px; /* Дальнейшее уменьшение размера шрифта */
-    }
-
-    .upper-text {
-        flex-direction: column; /* Стекирование элементов друг под другом */
-        align-items: flex-start;
-    }
-
-    .lower-content {
-        padding-top: 10px; /* Отступ сверху для второй строки */
-    }
-}
 
 
 

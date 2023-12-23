@@ -22,3 +22,18 @@
     outline: none;
 }
 
+
+@media only screen and (max-width: 768px) {
+
+    .code-inputs-container {
+        width: 343px;
+        gap: 12px;
+    }
+
+    .code-input {
+        width: 65px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+}
