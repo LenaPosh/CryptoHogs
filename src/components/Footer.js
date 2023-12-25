@@ -30,7 +30,7 @@ const Footer = () => {
                         <li><NavLink to="/indices">Crypto Indices</NavLink></li>
                     </ul>
                 </div>
-                <div className="footer-section" style={{width: '163px'}}>
+                <div className="footer-section" style={{width: '127px'}}>
                     <h4>Support</h4>
                     <ul>
                         <li><NavLink to="/support" >Contact Support</NavLink></li>
@@ -38,7 +38,7 @@ const Footer = () => {
                         <li><NavLink to="/faq">FAQ</NavLink></li>
                     </ul>
                 </div>
-                <div className="footer-section" style={{marginRight: '142px'}} >
+                <div className="footer-section"  >
                     <h4>Contact Us</h4>
                     {/* Контактная информация */}
                 </div>

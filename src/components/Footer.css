@@ -76,13 +76,10 @@
 @media only screen and (max-width: 768px) {
     .footer {
         width: 100vw;
-        background-color: #EBF2FF;
-
-        box-sizing: border-box;
     }
 
     .footer-content {
-
+        width: 95%;
         align-items: flex-start;
         height: auto;
         margin-left: 15px;
@@ -96,7 +93,7 @@
     .footer-section {
         display: flex;
         flex-direction: column;
-        width: 139px;
+        width: 85px;
         height: auto;
         flex-shrink: 0;
         margin-top: 10px;
@@ -104,7 +101,7 @@
     }
 
     .footer-section h4 {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .footer-section ul {
@@ -115,7 +112,7 @@
     }
 
     .footer-section ul li a {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .footer-section ul li:not(:last-child) {
