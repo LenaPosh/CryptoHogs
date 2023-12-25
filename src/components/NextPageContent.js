@@ -17,7 +17,7 @@ const NextPageContent = () => {
                         </div>
                     </div>
                 </div>
-                <div className="sub-block" style={{marginTop: '60px'}}>
+                <div className="sub-block" >
                     <div className="sub-block-text">Name</div>
                     <div className="sub-block-text">Price</div>
                     <div className="sub-block-text">Market Cap</div>
@@ -46,9 +46,9 @@ const NextPageContent = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="102" height="102" viewBox="0 0 102 102" fill="none">
                                     <circle cx="51" cy="51" r="51" fill="#3E80FF"/>
                                 </svg>
-                                <div className="svg-text">2</div>
+                                <div className="svg-text-2">2</div>
                             </div>
-                            <div className="line-between-svg"></div>
+                            <div className="line-between-svg-2"></div>
                             <div className="svg-with-number">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
                                     <circle cx="40" cy="40" r="40" fill="#F1EEEE"/>
@@ -90,7 +90,7 @@ const NextPageContent = () => {
                                 </defs>
                             </svg>
 
-                            <img src={Luna} alt='' style={{width: '134px', height: '134px', flexShrink: '0', marginBottom: '21px' }} />
+                            <img src={Luna} alt='' className="luna" />
 
                             <svg className='eth' xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" fill="none">
                                 <g clip-path="url(#clip0_90_260)">
@@ -145,10 +145,10 @@ const NextPageContent = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row" style={{marginTop: '48px'}}>
+                <div className="row" style={{marginTop: '28px'}}>
                     <div className="rectangle">
                         <h3 className="rectangle-title">Cryptocurrency derivatives</h3>
-                        <p className="rectangle-text" style={{width: '450px'}} >Trade cryptocurrency with our extensive range of poweWe are the best crypto exchange for trading crypto futures
+                        <p className="rectangle-text" >Trade cryptocurrency with our extensive range of poweWe are the best crypto exchange for trading crypto futures
 
                         </p>
                         <div className="rectangle-icon">
@@ -168,7 +168,7 @@ const NextPageContent = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row" style={{marginTop: '48px'}}>
+                <div className="row" style={{marginTop: '28px'}}>
                     <div className="rectangle">
                         <h3 className="rectangle-title">Trading bot</h3>
                         <p className="rectangle-text" >Earn passive income around the clock without having to constantly monitor the markets.
@@ -206,7 +206,7 @@ const NextPageContent = () => {
                         </div>
                         <div className="info-section" >
                             <h2 className="info-section-title">Reliable account protection</h2>
-                            <p className="info-section-description" style={{width: '456px', height: '84px'}}>We adhere to the highest security standards and use the most stringent security methods to ensure the safety of your account.</p>
+                            <p className="info-section-description-2">We adhere to the highest security standards and use the most stringent security methods to ensure the safety of your account.</p>
                         </div>
                         <div className="info-section">
                             <h2 className="info-section-title">Reliable platform</h2>

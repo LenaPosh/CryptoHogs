@@ -306,16 +306,18 @@ input.password::placeholder {
 
     .email,
     .password {
-        max-width: 230px;
+        max-width: 210px;
         width: 100%;
         margin-left: 50px;
         padding-bottom: 0;
+
 
     }
 
     .password-container {
         margin-top:10px;
         margin-left: 0;
+        width: 70%;
     }
 
     .email::placeholder,
@@ -329,7 +331,7 @@ input.password::placeholder {
         top: 16px;
         right: 18px;
         bottom: 10px;
-        left: 240px;
+        left: 220px;
         width: 32px;
         height: auto;
     }
@@ -357,7 +359,8 @@ input.password::placeholder {
         padding: 15px;
         font-size: 16px;
         align-items: center;
-        margin-left: 1px;
+        margin-left: 0;
+        margin-right: 20px;
     }
     .forgot {
         font-size: 16px;

@@ -72,3 +72,59 @@
 .footer-section ul li:not(:last-child) {
     margin-bottom: 10px; /* Добавляет отступ снизу для каждого li, кроме последнего */
 }
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        width: 100vw;
+        background-color: #EBF2FF;
+
+        box-sizing: border-box;
+    }
+
+    .footer-content {
+
+        align-items: flex-start;
+        height: auto;
+        margin-left: 15px;
+
+    }
+
+    .footer-section-title {
+        display: none;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        width: 139px;
+        height: auto;
+        flex-shrink: 0;
+        margin-top: 10px;
+        margin-right: 2px;
+    }
+
+    .footer-section h4 {
+        font-size: 16px;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 5px;
+
+    }
+
+    .footer-section ul li a {
+        font-size: 14px;
+    }
+
+    .footer-section ul li:not(:last-child) {
+        margin-bottom: 1px; /* Добавляет отступ снизу для каждого li, кроме последнего */
+    }
+
+
+
+
+
+}
+

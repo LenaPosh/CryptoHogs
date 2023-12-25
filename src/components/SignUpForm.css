@@ -223,6 +223,11 @@ form {
 
 
 @media only screen and (max-width: 768px) {
+    .page-container-up {
+
+        width: 100vw;
+        height: 100vh;
+    }
 
     .form-container-up {
         max-width: 353px;
@@ -237,7 +242,7 @@ form {
 
 
     .input-field-up {
-        max-width: 230px;
+        max-width: 210px;
         width: 100%;
         height: auto;
         margin: 15px 0 0 40px ;
