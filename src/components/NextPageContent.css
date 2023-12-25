@@ -531,28 +531,30 @@ body {
     .info-block {
         align-items: center;
         text-align: center;
+        margin-bottom: 20px;
     }
 
 
     .market-title {
-        font-size: 20px;
-        margin-left: 20px;
+        font-size: 16px;
+        margin-left: 0;
     }
 
     .upper-text {
         gap: 0;
         align-items: center;
         justify-content: space-between;
-        width: 90%;
+        width: 97%;
     }
 
     .lower-content {
         align-items: center;
-        gap: 5px
+        gap: 5px;
+        left: 10px;
     }
 
     .text {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .svg {
@@ -561,10 +563,17 @@ body {
         margin-right: 10px;
     }
 
+    .svg svg {
+        width: 17px;
+        /*height: 12px;*/
+        /*margin-right: 10px;*/
+    }
+
     .sub-block {
         margin-top: 10px;
-        padding: 20px;
+        padding: 10px;
         margin-left: 10px;
+        height: 50px;
     }
 
     .sub-block-text {
@@ -694,10 +703,10 @@ body {
 
     .image-block {
         width: 143px;
-        height: 374px;
+        height: auto;
         flex-shrink: 0;
-        margin-top: 30px;
-        margin-left: 70px;
+        margin-top: 50px;
+        margin-left: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -706,24 +715,24 @@ body {
 
 
     .btc {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         flex-shrink: 0;
         margin-left: 18px;
         margin-bottom: 23px;
     }
 
     .eth {
-        width: 75px;
-        height: 75px;
+        width: 65px;
+        height: 65px;
         flex-shrink: 0;
         margin-left: 29px
 
     }
 
     .luna {
-        width: 64px;
-        height: 64px;
+        width: 54px;
+        height: 54px;
         margin-right: 28px;
     }
 
@@ -835,8 +844,8 @@ body {
         align-items: flex-start;
     }
     .image-content img {
-        width: 130px;
-        height: 220px;
+        width: 110px;
+        height: 200px;
         align-items: flex-start;
     }
 
